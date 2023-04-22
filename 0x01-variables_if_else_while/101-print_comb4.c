@@ -9,9 +9,9 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 
-		for (I = 50; I < 58; I++)
+		for (m = 49; m < 58; m++)
 
-			for (m = 49; m < 58; m++)
+			for (I = 50; I < 58; I++)
 
 				if (I > m && m > n)
 				{
