@@ -12,7 +12,7 @@ int main(void)
 		for (j = '0'; j <= '9'; j++)
 
 			for (m = '0'; m <= '9'; m++)
-	{
+
 				if (i < j && j < m)
 				{
 					putchar(i);
@@ -20,12 +20,11 @@ int main(void)
 					putchar(m);
 
 					if (i == '7' && j == '8' && m == '9')
-						continue;
-
+					{
 						putchar(',');
 						putchar(' ');
+					}
 				}
-	}
 	putchar('\n');
 	return (0);
 }
