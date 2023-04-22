@@ -13,10 +13,6 @@ int main(void)
 		putchar(num);
 	if (num == '9')
 	{
-		break;
-	}
-	else
-	{
 		putchar(',');
 
 		putchar(' ');
