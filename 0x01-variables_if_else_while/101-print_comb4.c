@@ -5,21 +5,21 @@
  */
 int main(void)
 {
-	int n, m, I;
+	int m, i, j;
 
-	for (n = 48; n < 58; n++)
+	for (i = '0'; i <= '9'; i++)
 
-		for (m = 49; m < 58; m++)
+		for (j = '0'; j <= '9' j++)
 
-			for (I = 50; I < 58; I++)
+			for (m = '0'; m <= '9'; m++)
 
-				if (I > m && m > n)
+				if (i < j && j < m)
 				{
-					putchar(n);
+					putchar(i);
+					putchar(j);
 					putchar(m);
-					putchar(I);
 
-					if (n != 55 || m != 56)
+					if (i == '7' && j == '8' && m == '9')
 					{
 						putchar(',');
 						putchar(' ');
