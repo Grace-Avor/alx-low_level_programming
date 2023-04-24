@@ -5,26 +5,29 @@
  */
 int main(void)
 {
-	int m, i, j;
+	int x, y, z;
 
-	for (i = '0'; i <= '9'; i++)
+	for (x = '0'; x < '9'; x++)
 
-		for (j = '0'; j <= '9'; j++)
+		for (y = x + 1; y <= '9'; y++)
+		{
 
-			for (m = '0'; m <= '9'; m++)
+			for (z = y + 1; z <= '9'; z++)
+			{
 
-				if (i < j && j < m)
+				if ((y != x) != z)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(m);
+					putchar(x);
+					putchar(y);
+					putchar(z);
 
-					if (i == '7' && j == '8' && m == '9')
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					if (x == '7' && y == '8')
+					continue;
+					putchar(',');
+					putchar(' ');
 				}
+			}
+		}
 	putchar('\n');
 	return (0);
 }
