@@ -1,8 +1,6 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
-#define ERR_MSG "Error"
+#include "main.h"
 
 /**
  * is_digit - checks if a string contains a non-digit char
@@ -46,7 +44,6 @@ int _strlen(char *s)
 void errors(void)
 {
 	printf("Error\n");
-
 	exit(98);
 }
 
@@ -87,7 +84,6 @@ int main(int argc, char *argv[])
 		if (carry > 0)
 			result[len1 + len2 + 1] += carry;
 	}
-
 	for (i = 0; i < len - 1; i++)
 	{
 		if (result[i])
@@ -99,6 +95,5 @@ int main(int argc, char *argv[])
 		_putchar('0');
 	_putchar('\n');
 	free(result);
-
 	return (0);
 }
